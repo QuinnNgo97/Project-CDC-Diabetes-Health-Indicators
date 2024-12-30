@@ -14,7 +14,7 @@ Some of the goals for this report includes:
   
 An interactive PowerBI dashboard can be downloaded [here]().
 
-The Python code utilized to clean, organize and prepare data for the dashboard can be found [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/ce2a781d1e99cb4d85b5fbab6fc09e6695488507/Diabetes%20Indicators%20Analytics.py).
+The Python code utilized to clean, organize and prepare data for the dashboard can be found [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/73fd15dc9a8ff576926571ce21ee3db836652fe2/cdc_diabetes_report.py).
 
 The original Kaggle dataset for perfoming this analysis can be found [here](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?resource=download).
 
@@ -25,7 +25,7 @@ The dataset contains 253,680 instances with no missing values, spanning 22 featu
   <img src="https://github.com/QuinnNgo97/githubtest/blob/56cbfcdf4d77bb9be078b58e522c7e29b2a31731/Dia01.png">
 </div>
 
-Prior to beginning the analysis, a variety of checks were conducted for quality control and familiarization with the datasets. The Python code utilized to inspect and perform quality checks can be found [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/ce2a781d1e99cb4d85b5fbab6fc09e6695488507/Diabetes%20Indicators%20Analytics.py).
+Prior to beginning the analysis, a variety of checks were conducted for quality control and familiarization with the datasets. The Python code utilized to inspect and perform quality checks can be found [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/73fd15dc9a8ff576926571ce21ee3db836652fe2/cdc_diabetes_report.py).
 
 # Excecutive summary
 
