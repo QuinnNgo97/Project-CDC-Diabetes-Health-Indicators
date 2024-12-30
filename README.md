@@ -4,6 +4,8 @@ Diabetes is a prevalent chronic disease in the United States, affecting millions
 
 Early diagnosis is crucial, as it enables timely lifestyle changes and effective treatment. This report highlights key findings from the data analysis, aiming to identify indicators that can help predict diabetes risk and guide prevention efforts for individuals and public health officials alike.
 
+This dataset pulls from the 2015 Behavioral Risk Factor Surveillance System (BRFSS) survey and consist of 253,680 response that were previously managed to have no null data point.
+
 Some of the goals for this report includes:
 
 - **GOAL 1**: Can survey questions from the provide accurate predictions of whether an individual has diabetes?
