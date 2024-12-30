@@ -1,13 +1,26 @@
 # Project Background
   
+Diabetes is a prevalent chronic disease in the United States, affecting millions each year and posing serious health challenges. To better understand its risk factors, the Centers for Disease Control and Prevention (CDC) surveyed over 400,000 U.S. citizens about their lifestyles.
+
+Early diagnosis is crucial, as it enables timely lifestyle changes and effective treatment. This report highlights key findings from the data analysis, aiming to identify indicators that can help predict diabetes risk and guide prevention efforts for individuals and public health officials alike.
+
+Some of the goals for this report includes:
+
+- **GOAL 1**: Can survey questions from the provide accurate predictions of whether an individual has diabetes?
+
+- **GOAL 2**: What risk factors are most predictive of diabetes risk?
+
+- **GOAL 3**: Can we use a subset of the risk factors to accurately predict whether an individual has diabetes?
+  
 An interactive PowerBI dashboard can be downloaded [here]().
 
 The Python code utilized to clean, organize and prepare data for the dashboard can be found [here]().
 
-The original Kaggle dataset for perfoming this analysis can be found [here]().
+The original Kaggle dataset for perfoming this analysis can be found [here](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?resource=download).
 
 # Data Structure & Initial Checks
 
+The dataset contains 253,680 instances with no missing values, spanning 22 features related to lifestyle and health.
 <div align="center">
   <img src="">
 </div>
