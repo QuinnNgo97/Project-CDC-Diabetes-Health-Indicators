@@ -14,7 +14,7 @@ Some of the goals for this report includes:
   
 An interactive PowerBI dashboard can be downloaded [here]().
 
-The Python code utilized to clean, organize and prepare data for the dashboard can be found [here]().
+The Python code utilized to clean, organize and prepare data for the dashboard can be found [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/ce2a781d1e99cb4d85b5fbab6fc09e6695488507/Diabetes%20Indicators%20Analytics.py).
 
 The original Kaggle dataset for perfoming this analysis can be found [here](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?resource=download).
 
@@ -25,11 +25,13 @@ The dataset contains 253,680 instances with no missing values, spanning 22 featu
   <img src="">
 </div>
 
-Prior to beginning the analysis, a variety of checks were conducted for quality control and familiarization with the datasets. The Python code utilized to inspect and perform quality checks can be found [here]().
+Prior to beginning the analysis, a variety of checks were conducted for quality control and familiarization with the datasets. The Python code utilized to inspect and perform quality checks can be found [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/ce2a781d1e99cb4d85b5fbab6fc09e6695488507/Diabetes%20Indicators%20Analytics.py).
 
 # Excecutive summary
 
 ### Overview of Findings
+
+The features in the dataset can be categorized into two subsets: Measured and Lifestyle. Preliminary observations suggest that the Measured data subset demonstrates greater accuracy in identifying diabetes among the survey respondents compared to the Lifestyle data.
 
 Below is the overview page from the PowerBI dashboard and more examples are included throughout the report. The more interactive dashboard can be downloaded [here]().
 
