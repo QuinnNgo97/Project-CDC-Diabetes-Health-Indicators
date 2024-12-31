@@ -58,9 +58,10 @@ df_ransampled["Diabetes_01"].value_counts().plot.bar()
 plt.xticks([0,1], ['Healthy', 'Diabetes/Prediabetes'])
 plt.xticks(rotation=0)
 
-#Chia 2 feature type:
-colsM = df_ransampled.iloc[:, [21, 0, 1, 3, 6]]
-colsL = df_ransampled.iloc[:, [21, 4, 5, 7,8,9,10,13,14,15,16,17,18,19,20]]
+#Chia 3 feature type:
+colsM = df_ransampled.iloc[:, [21, 0,1,2,3,5,6,17,18,19,20]]
+colsL = df_ransampled.iloc[:, [21, 4,7,8,9,10,11,12,13,14,15,16]]
+colsS = df_ransampled.iloc[:, [21, 0,1,3,5,6,7,13,16,17,18,19,20]]
 
 #Quick barplot for categorical data, showing how many data points belong to each category (or how diverse is our data)
 for i in colsM.columns:
@@ -247,59 +248,90 @@ X_colsM=colsM.drop('Diabetes_01',axis='columns',inplace=False)
 
 y_colsL=colsL['Diabetes_01']
 X_colsL=colsL.drop('Diabetes_01',axis='columns',inplace=False)
+
+y_colsS=colsS['Diabetes_01']
+X_colsS=colsS.drop('Diabetes_01',axis='columns',inplace=False)
 #Chia dữ liệu thành training set và test set
 from sklearn.model_selection import train_test_split # Thư viện hỗ trợ chia data thành train và test set
 XM_train, XM_test, yM_train, yM_test = train_test_split(X_colsM,y_colsM,test_size=0.3,random_state=1)
 
 XL_train, XL_test, yL_train, yL_test = train_test_split(X_colsL,y_colsL,test_size=0.3,random_state=1)
+
+XS_train, XS_test, yS_train, yS_test = train_test_split(X_colsS,y_colsS,test_size=0.3,random_state=1)
 #Tao list chua ket qua so sanh
 precision1=[]
 recall1=[]
 f11=[]
 name1 = []
-accuracy = []
+accuracy1 = []
 
 #Chay ML cho feature lifestyle
-modelLR1 = LogisticRegression()
+modelLR1 = RandomForestClassifier(criterion= 'gini', max_depth= 10, n_estimators= 30, random_state=1)
 modelLR1.fit(XL_train, yL_train)
 yL_pred = modelLR1.predict(XL_test)
 pre1 = round(precision_score(yL_test, yL_pred,average='micro'),2)
 rec1 = round(recall_score(yL_test, yL_pred,average='micro'),2)
 f1_1=round(f1_score(yL_test, yL_pred,average='micro'),2)
 acc_1 = round(accuracy_score(yL_test, yL_pred),2)
-accuracy.append(acc_1)
+accuracy1.append(acc_1)
 recall1.append(rec1)
 f11.append(f1_1)
 precision1.append(pre1)
 name1.append("Feature Lifestyle")
 
 #Chay ML cho feature measured
-modelLR2 = LogisticRegression()
+modelLR2 = RandomForestClassifier(criterion= 'gini', max_depth= 10, n_estimators= 30, random_state=1)
 modelLR2.fit(XM_train, yM_train)
 yM_pred = modelLR2.predict(XM_test)
 pre2 = round(precision_score(yM_test, yM_pred,average='micro'),2)
 rec2 = round(recall_score(yM_test, yM_pred,average='micro'),2)
 f1_2=round(f1_score(yM_test, yM_pred,average='micro'),2)
 acc_2 = round(accuracy_score(yM_test, yM_pred),2)
-accuracy.append(acc_2)
+accuracy1.append(acc_2)
 recall1.append(rec2)
 f11.append(f1_2)
 precision1.append(pre2)
 name1.append("Feature Measured")
 
-#Xây dựng mô hình Logistic Regression
-modelLR = LogisticRegression()
+#Chay ML cho feature optimized
+modelLR3 = RandomForestClassifier(criterion= 'gini', max_depth= 10, n_estimators= 30, random_state=1)
+modelLR3.fit(XS_train, yS_train)
+yS_pred = modelLR3.predict(XS_test)
+pre3 = round(precision_score(yS_test, yS_pred,average='micro'),2)
+rec3 = round(recall_score(yS_test, yS_pred,average='micro'),2)
+f1_3=round(f1_score(yS_test, yS_pred,average='micro'),2)
+acc_3 = round(accuracy_score(yS_test, yS_pred),2)
+accuracy1.append(acc_3)
+recall1.append(rec3)
+f11.append(f1_3)
+precision1.append(pre3)
+name1.append("Feature Optimized")
+
+#Chay RandomForestClassifier
+modelLR = RandomForestClassifier(criterion= 'gini', max_depth= 10, n_estimators= 30, random_state=1)
 modelLR.fit(X_train, y_train)
 y_pred = modelLR.predict(X_test)
 pre3 = round(precision_score(y_test, y_pred,average='micro'),2)
 rec3 = round(recall_score(y_test, y_pred,average='micro'),2)
 f1_3=round(f1_score(y_test, y_pred,average='micro'),2)
 acc_3 = round(accuracy_score(y_test, y_pred),2)
-accuracy.append(acc_3)
+accuracy1.append(acc_3)
 recall1.append(rec3)
 f11.append(f1_3)
 precision1.append(pre3)
 name1.append("Full Feature")
 
-Results1 = pd.DataFrame(np.column_stack([name1, precision1, recall1,f11, accuracy]),columns=['Name', 'Precision','Recall','F1-score','accuracy score'])
+Results1 = pd.DataFrame(np.column_stack([name1, precision1, recall1,f11, accuracy1]),columns=['Name', 'Precision','Recall','F1-score','accuracy score'])
 Results1
+
+df.to_csv('/content/drive/My Drive/cleanedCDC-diabetes-data.csv', index=False)
+
+#Đánh giá mô hình bằng confusion matrix
+from sklearn.metrics import confusion_matrix
+cnf_matrix = confusion_matrix(y_test, y_pred)
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+fig, ax = plt.subplots(figsize=(4, 4))
+labels = ['Healthy', 'Diabetic']#Tên class
+ConfusionMatrixDisplay.from_predictions(
+    y_test, y_pred, display_labels=labels, xticks_rotation=45,
+    ax=ax, colorbar=False, cmap="PuBuGn")
