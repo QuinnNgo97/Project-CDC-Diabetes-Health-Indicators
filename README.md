@@ -47,13 +47,13 @@ Individuals with heart disease or related conditions are twice as likely to be d
 An individual with a BMI of 25 and above will have gradually higher likelihood of developing diabetes.
 
 <div align="center">
-  <img src="https://github.com/QuinnNgo97/githubtest/blob/5b9477e4f7480ca44763e74ead03e95bf7ec4efc/Dia06.png">
+  <img src="https://github.com/QuinnNgo97/githubtest/blob/5b9477e4f7480ca44763e74ead03e95bf7ec4efc/Dia06.png" width="600" >
 </div>
 
 Additionally, self-perception of poor health or experiencing difficulty walking can also serve as effective indicators of a higher risk for diabetic conditions. These factors provide practical alternatives for assessing diabetes risk, particularly in situations where access to healthcare is limited.
 
 <div align="center">
-  <img src="https://github.com/QuinnNgo97/githubtest/blob/a116885ab01dd604c3444f6074819997138b24b8/Dia07.png">
+  <img src="https://github.com/QuinnNgo97/githubtest/blob/a116885ab01dd604c3444f6074819997138b24b8/Dia07.png" width="600">
 </div>
 
 ### Goal 1:
@@ -65,7 +65,7 @@ In medical contexts, the Total Allowable Error (TAE) is typically set at 6%, mea
 <div align="center">
 <p float="left">
   <img src="https://github.com/QuinnNgo97/githubtest/blob/9ebf8aad9a9219d7ae8aece1390ff2975488e1ca/Dia03.png" width="650" />
-  <img src="https://github.com/QuinnNgo97/githubtest/blob/9ebf8aad9a9219d7ae8aece1390ff2975488e1ca/Dia08.png" width="300" /> 
+  <img src="https://github.com/QuinnNgo97/githubtest/blob/9ebf8aad9a9219d7ae8aece1390ff2975488e1ca/Dia08.png" width="297" /> 
 </p>
 </div>
 
@@ -84,7 +84,7 @@ To assess whether a smaller subset of the questionnaire could effectively predic
 The results show that the features from Group 3 outperformed the other groups, including the full feature set, by a small margin. This confirms that a subset of risk factors has been identified, which can effectively predict whether an individual has diabetes.
 
 <div align="center">
-  <img src="https://github.com/QuinnNgo97/githubtest/blob/9ebf8aad9a9219d7ae8aece1390ff2975488e1ca/Dia04.png" width="650">
+  <img src="https://github.com/QuinnNgo97/githubtest/blob/9ebf8aad9a9219d7ae8aece1390ff2975488e1ca/Dia04.png" width="600">
 </div>
 
 ### Recommendations:
