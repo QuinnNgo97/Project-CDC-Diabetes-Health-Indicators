@@ -65,7 +65,7 @@ In medical contexts, the Total Allowable Error (TAE) is typically set at 6%, mea
 <div align="center">
 <p float="left">
   <img src="https://github.com/QuinnNgo97/githubtest/blob/9ebf8aad9a9219d7ae8aece1390ff2975488e1ca/Dia03.png" width="450" />
-  <img src="https://github.com/QuinnNgo97/githubtest/blob/9ebf8aad9a9219d7ae8aece1390ff2975488e1ca/Dia08.png" width="200" /> 
+  <img src="https://github.com/QuinnNgo97/githubtest/blob/9ebf8aad9a9219d7ae8aece1390ff2975488e1ca/Dia08.png" width="250" /> 
 </p>
 </div>
 
