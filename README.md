@@ -14,7 +14,7 @@ Some of the goals for this report includes:
 
 - **Goal 3**: Can we use a subset of the risk factors to accurately predict whether an individual has diabetes?
   
-An interactive PowerBI dashboard can be downloaded [here]().
+An interactive PowerBI dashboard can be downloaded [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/5d7eba803040f64734cf796473d06d038abdc3ea/CDC%20diabetes.pbix).
 
 The Python code utilized to clean, organize and prepare data for the dashboard can be found [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/73fd15dc9a8ff576926571ce21ee3db836652fe2/cdc_diabetes_report.py).
 
@@ -35,7 +35,7 @@ Prior to beginning the analysis, a variety of checks were conducted for quality 
 
 Among the 254,000 survey responses collected in 2015, 15.8% of participants were diagnosed with either diabetes or prediabetes. The data reveal that the likelihood of developing diabetes increases significantly from the age of 57, surpassing the risk observed in the overall population. Additionally, factors such as gender, income, and education show strong correlations with diabetes risk. High-income males are 50% more likely to develop a diabetic condition compared to their female counterparts, while individuals with lower educational attainment face even greater risks—those who have not completed high school are twice as likely to develop diabetes compared to those with higher levels of education.
 
-Below is the overview page from the PowerBI dashboard and more examples are included throughout the report. The more interactive dashboard can be downloaded [here]().
+Below is the overview page from the PowerBI dashboard and more examples are included throughout the report. The more interactive dashboard can be downloaded [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/5d7eba803040f64734cf796473d06d038abdc3ea/CDC%20diabetes.pbix).
 
 <div align="center">
   <img src="https://github.com/QuinnNgo97/githubtest/blob/0a66c0c66e304c97df169a5fb10b34992dff70f0/Dia02.png">
