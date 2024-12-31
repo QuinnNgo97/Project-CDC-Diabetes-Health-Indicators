@@ -1,4 +1,4 @@
-# Project Background
+## Project Background
   
 Diabetes is a prevalent chronic disease in the United States, affecting millions each year and posing serious health challenges. To better understand its risk factors, the Centers for Disease Control and Prevention (CDC) surveyed over 400,000 U.S. citizens about their lifestyles.
 
@@ -20,7 +20,7 @@ The Python code utilized to clean, organize and prepare data for the dashboard c
 
 The original Kaggle dataset for perfoming this analysis can be found [here](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?resource=download).
 
-# Data Structure & Initial Checks
+## Data Structure & Initial Checks
 
 The dataset contains 253,680 instances with no missing values, spanning 22 features related to lifestyle and health.
 <div align="center">
@@ -29,7 +29,7 @@ The dataset contains 253,680 instances with no missing values, spanning 22 featu
 
 Prior to beginning the analysis, a variety of checks were conducted for quality control and familiarization with the datasets. The Python code utilized to inspect and perform quality checks can be found [here](https://github.com/QuinnNgo97/Project-CDC-Diabetes-Health-Indicators/blob/73fd15dc9a8ff576926571ce21ee3db836652fe2/cdc_diabetes_report.py).
 
-# Excecutive summary
+## Excecutive summary
 
 ### Overview of Findings
 
@@ -93,4 +93,4 @@ The results show that the features from Group 3 outperformed the other groups, i
 - **Incorporate Additional Data Sources**: Explore the possibility of incorporating additional objective health data (such as medical records) or more granular self-reported data to further improve model accuracy and account for potential missing risk factors.
 - **Validate with Larger, Diverse Datasets**: Test the model on a larger and more diverse dataset to ensure its robustness and generalizability across different demographics, regions, and medical backgrounds. This will help ensure the model's reliability in real-world applications.
 
-# Caveats and assumptions
+## Caveats and assumptions
