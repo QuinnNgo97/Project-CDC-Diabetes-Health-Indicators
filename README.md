@@ -38,6 +38,6 @@ The features in the dataset can be categorized into two subsets: Measured and Li
 Below is the overview page from the PowerBI dashboard and more examples are included throughout the report. The more interactive dashboard can be downloaded [here]().
 
 <div align="center">
-  <img src="">
+  <img src="https://github.com/QuinnNgo97/githubtest/blob/c4713f09998d940b5907e9fc46db3d30f534e817/Dia02.png">
 </div>
 
